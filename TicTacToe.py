@@ -35,6 +35,9 @@ def O_turn():
     if O_input in used_numbers:
         print("That position is full, try another one\n")
         O_turn()
+    elif O_input not in gameboard:
+        print("Invalid Position")
+        O_turn()
     used_numbers.append(O_input)
     gameboard[O_input] = 'O'
 
