@@ -1,4 +1,4 @@
-# Tic Tac Toe In The Console
+# Text-Based Tic-Tac-Toe
 
 # Create an empty list for used numbers
 used_numbers = []
