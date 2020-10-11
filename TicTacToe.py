@@ -23,6 +23,9 @@ def X_turn():
     if X_input in used_numbers:
         print("That position is full, try another one\n")
         X_turn()
+    elif X_input not in gameboard:
+        print("Invalid Position")
+        X_turn()
     used_numbers.append(X_input)
     gameboard[X_input] = 'X'
 
